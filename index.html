@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Blogging Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Login/Profile Section -->
+        <div class="profile">
+            <!-- Example: Displaying host's profile -->
+            <img src="profile-image.jpg" alt="Profile Image">
+            <span>Host's Name</span>
+            <!-- Example: Displaying current time -->
+            <span id="currentTime"></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Blog Post Section -->
+        <section class="blog-posts">
+            <!-- Example: Displaying blog posts -->
+            <div class="post">
+                <h2>Title of the Post</h2>
+                <p>Content of the post goes here...</p>
+                <span class="post-time">Posted 3 hours ago</span>
+                <!-- Edit and Delete buttons -->
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </section>
+
+        <!-- Create Post Section -->
+        <section class="create-post">
+            <h2>Create a New Post</h2>
+            <form id="postForm">
+                <input type="text" name="title" placeholder="Enter Title" required><br>
+                <textarea name="content" placeholder="Enter Content" rows="6" required></textarea><br>
+                <button type="submit">Publish Post</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
